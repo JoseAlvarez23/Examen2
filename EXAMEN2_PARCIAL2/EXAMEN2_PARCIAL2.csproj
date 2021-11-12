@@ -56,12 +56,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\ClienteController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
+    <Compile Include="Modelos\DAO\ClienteDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
     <Compile Include="Modelos\DAO\UsuariaoDAO.cs" />
+    <Compile Include="Modelos\Entidades\Cliente.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\ClienteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ClienteView.Designer.cs">
+      <DependentUpon>ClienteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DetallesTicketsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DetallesTicketsView.Designer.cs">
+      <DependentUpon>DetallesTicketsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EstadoTicketsViewcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EstadoTicketsViewcs.Designer.cs">
+      <DependentUpon>EstadoTicketsViewcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +95,18 @@
     <Compile Include="Vistas\MenuView.Designer.cs">
       <DependentUpon>MenuView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\SoporteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\SoporteView.Designer.cs">
+      <DependentUpon>SoporteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TicketsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\TicketsView.Designer.cs">
+      <DependentUpon>TicketsView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -84,11 +117,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\ClienteView.resx">
+      <DependentUpon>ClienteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DetallesTicketsView.resx">
+      <DependentUpon>DetallesTicketsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EstadoTicketsViewcs.resx">
+      <DependentUpon>EstadoTicketsViewcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\MenuView.resx">
       <DependentUpon>MenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\SoporteView.resx">
+      <DependentUpon>SoporteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\TicketsView.resx">
+      <DependentUpon>TicketsView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">

@@ -40,11 +40,11 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripEx5 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.ClientesToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.SoportetoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.EstadotoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.TicketstoolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.DetallestoolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
@@ -85,7 +85,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2010;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem5;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(921, 167);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -120,7 +120,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx1.Image = null;
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.ClientesToolStripButton});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx1.Name = "toolStripEx1";
             this.toolStripEx1.Office12Mode = false;
@@ -153,7 +153,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripEx2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx2.Image = null;
             this.toolStripEx2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton2});
+            this.SoportetoolStripButton});
             this.toolStripEx2.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx2.Name = "toolStripEx2";
             this.toolStripEx2.Office12Mode = false;
@@ -171,11 +171,11 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
             this.toolStripTabItem3.Panel.ScrollPosition = 0;
             this.toolStripTabItem3.Panel.TabIndex = 4;
-            this.toolStripTabItem3.Panel.Text = "DESTADO TICKETS";
+            this.toolStripTabItem3.Panel.Text = "ESTADO TICKETS";
             this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(102, 19);
+            this.toolStripTabItem3.Size = new System.Drawing.Size(94, 19);
             this.toolStripTabItem3.Tag = "3";
-            this.toolStripTabItem3.Text = "DESTADO TICKETS";
+            this.toolStripTabItem3.Text = "ESTADO TICKETS";
             // 
             // toolStripTabItem4
             // 
@@ -218,7 +218,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx3.Image = null;
             this.toolStripEx3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton3});
+            this.EstadotoolStripButton});
             this.toolStripEx3.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx3.Name = "toolStripEx3";
             this.toolStripEx3.Office12Mode = false;
@@ -235,7 +235,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripEx4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx4.Image = null;
             this.toolStripEx4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton4});
+            this.TicketstoolStripButton});
             this.toolStripEx4.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx4.Name = "toolStripEx4";
             this.toolStripEx4.Office12Mode = false;
@@ -252,7 +252,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripEx5.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx5.Image = null;
             this.toolStripEx5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton5});
+            this.DetallestoolStripButton});
             this.toolStripEx5.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx5.Name = "toolStripEx5";
             this.toolStripEx5.Office12Mode = false;
@@ -260,55 +260,56 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.toolStripEx5.Size = new System.Drawing.Size(131, 111);
             this.toolStripEx5.TabIndex = 0;
             // 
-            // toolStripButton1
+            // ClientesToolStripButton
             // 
-            this.toolStripButton1.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.man;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(57, 94);
-            this.toolStripButton1.Text = "CLIENTES";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClientesToolStripButton.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.man;
+            this.ClientesToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ClientesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ClientesToolStripButton.Name = "ClientesToolStripButton";
+            this.ClientesToolStripButton.Size = new System.Drawing.Size(57, 94);
+            this.ClientesToolStripButton.Text = "CLIENTES";
+            this.ClientesToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClientesToolStripButton.Click += new System.EventHandler(this.ClientesToolStripButton_Click_1);
             // 
-            // toolStripButton2
+            // SoportetoolStripButton
             // 
-            this.toolStripButton2.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.soporte_tecnico;
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(109, 94);
-            this.toolStripButton2.Text = "TIPO DE SORPORTE";
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.SoportetoolStripButton.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.soporte_tecnico;
+            this.SoportetoolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.SoportetoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SoportetoolStripButton.Name = "SoportetoolStripButton";
+            this.SoportetoolStripButton.Size = new System.Drawing.Size(102, 94);
+            this.SoportetoolStripButton.Text = "TIPO DE SOPORTE";
+            this.SoportetoolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripButton3
+            // EstadotoolStripButton
             // 
-            this.toolStripButton3.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.ticket;
-            this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(101, 94);
-            this.toolStripButton3.Text = "GENERAR TICKETS";
-            this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.EstadotoolStripButton.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.ticket;
+            this.EstadotoolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.EstadotoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.EstadotoolStripButton.Name = "EstadotoolStripButton";
+            this.EstadotoolStripButton.Size = new System.Drawing.Size(101, 94);
+            this.EstadotoolStripButton.Text = "GENERAR TICKETS";
+            this.EstadotoolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripButton4
+            // TicketstoolStripButton
             // 
-            this.toolStripButton4.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.boleto;
-            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(92, 94);
-            this.toolStripButton4.Text = "TIPO DE TICKETS";
-            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TicketstoolStripButton.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.boleto;
+            this.TicketstoolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.TicketstoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TicketstoolStripButton.Name = "TicketstoolStripButton";
+            this.TicketstoolStripButton.Size = new System.Drawing.Size(92, 94);
+            this.TicketstoolStripButton.Text = "TIPO DE TICKETS";
+            this.TicketstoolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripButton5
+            // DetallestoolStripButton
             // 
-            this.toolStripButton5.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.caja_de_boletos;
-            this.toolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(117, 94);
-            this.toolStripButton5.Text = "TICKETS GENERADOS";
-            this.toolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.DetallestoolStripButton.Image = global::EXAMEN2_PARCIAL2.Properties.Resources.caja_de_boletos;
+            this.DetallestoolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DetallestoolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DetallestoolStripButton.Name = "DetallestoolStripButton";
+            this.DetallestoolStripButton.Size = new System.Drawing.Size(117, 94);
+            this.DetallestoolStripButton.Text = "TICKETS GENERADOS";
+            this.DetallestoolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // MenuView
             // 
@@ -347,18 +348,18 @@ namespace EXAMEN2_PARCIAL2.Vistas
         private Syncfusion.Windows.Forms.Tools.RibbonControlAdv ribbonControlAdv1;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton ClientesToolStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem2;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem3;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem4;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem5;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx2;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx3;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton EstadotoolStripButton;
+        private System.Windows.Forms.ToolStripButton SoportetoolStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx4;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton TicketstoolStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx5;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton DetallestoolStripButton;
     }
 }
