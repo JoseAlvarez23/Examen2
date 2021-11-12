@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EXAMEN2_PARCIAL2.Vistas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,7 +16,7 @@ namespace EXAMEN2_PARCIAL2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginView());
         }
     }
 }

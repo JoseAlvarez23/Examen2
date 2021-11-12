@@ -25,8 +25,8 @@ namespace EXAMEN2_PARCIAL2.Modelos.DAO
                 sql.Append(" SELECT 1 FROM USUARIO WHERE EMAIL =@Email AND CLAVE =@Clave;");
 
                 //Ya que arriba pusimos para que heredara de de la clase conexion podemos hacer uso de Miconexion
-                comando.Connection = Miconexion;
-                Miconexion.Open();
+                comando.Connection = ConexionExamen;
+                ConexionExamen.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 80).Value = user.Email;

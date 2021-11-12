@@ -16,7 +16,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
         public LoginView()
         {
             InitializeComponent();
-            LoginController controlador = new LoginController();
+            LoginController controlador = new LoginController(this);
         }
     }
 }

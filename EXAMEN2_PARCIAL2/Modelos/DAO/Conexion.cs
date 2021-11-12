@@ -10,6 +10,7 @@ namespace EXAMEN2_PARCIAL2.Modelos.DAO
 {
     public class Conexion
     {
-        protected SqlConnection Miconexion = new SqlConnection(ConfigurationManager.ConnectionStrings["ExamenConexion"].ConnectionString);
+        //protected SqlConnection Miconexion = new SqlConnection(ConfigurationManager.ConnectionStrings["ExamenConexion"].ConnectionString);
+        protected SqlConnection ConexionExamen = new SqlConnection(ConfigurationManager.ConnectionStrings["ExamenConexion"].ConnectionString);
     }
 }
