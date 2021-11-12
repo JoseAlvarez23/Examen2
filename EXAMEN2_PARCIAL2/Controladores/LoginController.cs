@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace EXAMEN2_PARCIAL2.Controladores
 {
-    class LoginController
+    public class LoginController
     {
+
+
+
     }
 }
