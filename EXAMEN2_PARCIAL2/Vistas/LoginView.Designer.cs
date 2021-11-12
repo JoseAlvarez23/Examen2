@@ -40,23 +40,25 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // 
             // btn_cancelar
             // 
+            this.btn_cancelar.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar.Location = new System.Drawing.Point(461, 255);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(120, 58);
             this.btn_cancelar.TabIndex = 13;
             this.btn_cancelar.Text = "CANCELAR";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.UseVisualStyleBackColor = false;
             // 
             // btn_aceptar
             // 
+            this.btn_aceptar.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_aceptar.Location = new System.Drawing.Point(214, 255);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(124, 58);
             this.btn_aceptar.TabIndex = 12;
             this.btn_aceptar.Text = "ACEPTAR";
-            this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.UseVisualStyleBackColor = false;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // label3
@@ -77,6 +79,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.txt_clave.PasswordChar = '*';
             this.txt_clave.Size = new System.Drawing.Size(281, 24);
             this.txt_clave.TabIndex = 10;
+            this.txt_clave.Text = "1234";
             // 
             // txt_email
             // 

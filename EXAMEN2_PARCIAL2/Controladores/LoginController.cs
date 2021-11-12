@@ -41,9 +41,9 @@ namespace EXAMEN2_PARCIAL2.Controladores
             if (esValido)
             {
                 MessageBox.Show("USUARIO VALIDO");
-                //MenuView menu = new MenuView();
-                //vista.Hide();
-                //menu.Show();
+                MenuView menu = new MenuView();
+                vista.Hide();
+                menu.Show();
 
             }
             else
