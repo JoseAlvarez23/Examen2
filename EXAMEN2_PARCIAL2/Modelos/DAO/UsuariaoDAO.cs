@@ -33,7 +33,7 @@ namespace EXAMEN2_PARCIAL2.Modelos.DAO
                 comando.Parameters.Add("@Clave", SqlDbType.NVarChar, 100).Value = user.Clave;
                 valido = Convert.ToBoolean(comando.ExecuteScalar());
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
 

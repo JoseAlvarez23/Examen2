@@ -18,5 +18,10 @@ namespace EXAMEN2_PARCIAL2.Vistas
             InitializeComponent();
             LoginController controlador = new LoginController(this);
         }
+
+        private void btn_aceptar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

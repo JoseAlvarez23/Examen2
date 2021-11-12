@@ -57,6 +57,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.btn_aceptar.TabIndex = 12;
             this.btn_aceptar.Text = "ACEPTAR";
             this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // label3
             // 
@@ -84,6 +85,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(281, 24);
             this.txt_email.TabIndex = 9;
+            this.txt_email.Text = "jralvarezl@unah.hn";
             // 
             // label2
             // 
