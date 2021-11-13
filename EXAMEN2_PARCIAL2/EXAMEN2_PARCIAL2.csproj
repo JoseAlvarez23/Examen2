@@ -57,11 +57,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\ClienteController.cs" />
+    <Compile Include="Controladores\DetallesController.cs" />
+    <Compile Include="Controladores\EstadoController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
+    <Compile Include="Controladores\SoporteController.cs" />
+    <Compile Include="Controladores\TicketController.cs" />
     <Compile Include="Modelos\DAO\ClienteDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\DetallesDAO.cs" />
+    <Compile Include="Modelos\DAO\EstadoDAO.cs" />
+    <Compile Include="Modelos\DAO\SoporteDAO.cs" />
+    <Compile Include="Modelos\DAO\TicketDAO.cs" />
     <Compile Include="Modelos\DAO\UsuariaoDAO.cs" />
     <Compile Include="Modelos\Entidades\Cliente.cs" />
+    <Compile Include="Modelos\Entidades\Detalles.cs" />
+    <Compile Include="Modelos\Entidades\Estado.cs" />
+    <Compile Include="Modelos\Entidades\Soporte.cs" />
+    <Compile Include="Modelos\Entidades\Tickets.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

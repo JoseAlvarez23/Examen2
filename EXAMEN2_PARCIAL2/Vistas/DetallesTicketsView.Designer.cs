@@ -69,12 +69,13 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(940, 501);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Name = "DetallesTicketsView";
-            this.Text = "DetallesTicketsView";
+            this.Text = "DETALLES DE LOS TICKETS";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -84,7 +85,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

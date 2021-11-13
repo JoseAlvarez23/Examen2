@@ -44,6 +44,8 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.btn_nuevo = new System.Windows.Forms.Button();
             this.ClientesDataGridView = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ClientesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -133,7 +135,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(452, 290);
+            this.btn_cancelar.Location = new System.Drawing.Point(726, 290);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(130, 44);
             this.btn_cancelar.TabIndex = 38;
@@ -143,7 +145,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // btn_guardar
             // 
             this.btn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_guardar.Location = new System.Drawing.Point(294, 290);
+            this.btn_guardar.Location = new System.Drawing.Point(424, 290);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(145, 44);
             this.btn_guardar.TabIndex = 37;
@@ -153,7 +155,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // btn_nuevo
             // 
             this.btn_nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevo.Location = new System.Drawing.Point(141, 290);
+            this.btn_nuevo.Location = new System.Drawing.Point(107, 290);
             this.btn_nuevo.Name = "btn_nuevo";
             this.btn_nuevo.Size = new System.Drawing.Size(145, 44);
             this.btn_nuevo.TabIndex = 36;
@@ -174,12 +176,34 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // btn_modificar
+            // 
+            this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificar.Location = new System.Drawing.Point(275, 290);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(130, 44);
+            this.btn_modificar.TabIndex = 40;
+            this.btn_modificar.Text = "MODIFICAR";
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.Location = new System.Drawing.Point(575, 290);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(130, 44);
+            this.btn_eliminar.TabIndex = 41;
+            this.btn_eliminar.Text = "ELIMINAR";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            // 
             // ClienteView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(931, 517);
+            this.Controls.Add(this.btn_eliminar);
+            this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.ClientesDataGridView);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_guardar);
@@ -217,5 +241,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
         public System.Windows.Forms.Button btn_nuevo;
         public System.Windows.Forms.DataGridView ClientesDataGridView;
         public System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.Button btn_eliminar;
+        public System.Windows.Forms.Button btn_modificar;
     }
 }

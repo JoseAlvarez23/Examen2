@@ -16,7 +16,10 @@ namespace EXAMEN2_PARCIAL2.Vistas
         }
        
         ClienteView vistaClientes;
-        
+        DetallesTicketsView vistaDetalles;
+        SoporteView vistaSoporte;
+        EstadoTicketsViewcs vistaEstado;
+        TicketsView vistaTickets;
       
 
       
@@ -42,5 +45,91 @@ namespace EXAMEN2_PARCIAL2.Vistas
             vistaClientes = null;
         }
 
+       
+
+        private void SoportetoolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaSoporte == null)
+            {
+                vistaSoporte = new SoporteView();
+                //vistaSoporte.MdiParent = this;
+                vistaSoporte.FormClosed += vistaSoporte_FormClosed; ;
+                vistaSoporte.Show();
+            }
+            else
+            {
+                vistaSoporte.Activate();
+            }
+        }
+
+        private void vistaSoporte_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaSoporte = null;
+        }
+
+        private void EstadotoolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaEstado == null)
+            {
+                vistaEstado = new EstadoTicketsViewcs();
+                //vistaEstado.MdiParent = this;
+                vistaEstado.FormClosed += vistaEstado_FormClosed; ;
+                vistaEstado.Show();
+            }
+            else
+            {
+                vistaEstado.Activate();
+            }
+        }
+
+        private void vistaEstado_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaEstado = null;
+        }
+
+
+        private void TicketstoolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaTickets == null)
+            {
+                vistaTickets = new TicketsView();
+                //vistaTickets.MdiParent = this;
+                vistaTickets.FormClosed += vistaTickets_FormClosed; ;
+                vistaTickets.Show();
+            }
+            else
+            {
+                vistaTickets.Activate();
+            }
+        }
+
+        private void vistaTickets_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaTickets = null;
+        }
+
+        private void DetallestoolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaDetalles == null)
+            {
+                vistaDetalles = new DetallesTicketsView();
+                //vistaDetalles.MdiParent = this;
+                vistaDetalles.FormClosed += vistaDetalles_FormClosed; ;
+                vistaDetalles.Show();
+            }
+            else
+            {
+                vistaDetalles.Activate();
+            }
+        }
+
+        private void vistaDetalles_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaDetalles = null;
+        }
+        private void toolStripEx2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
