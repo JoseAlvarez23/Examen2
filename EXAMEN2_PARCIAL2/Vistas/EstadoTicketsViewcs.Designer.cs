@@ -30,15 +30,15 @@ namespace EXAMEN2_PARCIAL2.Vistas
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.btn_guardar = new System.Windows.Forms.Button();
-            this.btn_nuevo = new System.Windows.Forms.Button();
-            this.txt_numerotickets = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txt_idtikects = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cB_estado = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_eliminarestado = new System.Windows.Forms.Button();
+            this.btn_modificarestado = new System.Windows.Forms.Button();
+            this.btn_cancelarestado = new System.Windows.Forms.Button();
+            this.btn_guardarestado = new System.Windows.Forms.Button();
+            this.btn_nuevoestado = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -50,53 +50,6 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label2.Size = new System.Drawing.Size(152, 16);
             this.label2.TabIndex = 38;
             this.label2.Text = "ESTADO DE TICKET";
-            // 
-            // btn_cancelar
-            // 
-            this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(466, 313);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(107, 30);
-            this.btn_cancelar.TabIndex = 45;
-            this.btn_cancelar.Text = "CANCELAR";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
-            // 
-            // btn_guardar
-            // 
-            this.btn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_guardar.Location = new System.Drawing.Point(320, 313);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(122, 30);
-            this.btn_guardar.TabIndex = 44;
-            this.btn_guardar.Text = "GUARDAR";
-            this.btn_guardar.UseVisualStyleBackColor = true;
-            // 
-            // btn_nuevo
-            // 
-            this.btn_nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevo.Location = new System.Drawing.Point(179, 313);
-            this.btn_nuevo.Name = "btn_nuevo";
-            this.btn_nuevo.Size = new System.Drawing.Size(122, 30);
-            this.btn_nuevo.TabIndex = 43;
-            this.btn_nuevo.Text = "NUEVO";
-            this.btn_nuevo.UseVisualStyleBackColor = true;
-            // 
-            // txt_numerotickets
-            // 
-            this.txt_numerotickets.Location = new System.Drawing.Point(343, 166);
-            this.txt_numerotickets.Name = "txt_numerotickets";
-            this.txt_numerotickets.Size = new System.Drawing.Size(218, 20);
-            this.txt_numerotickets.TabIndex = 42;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(176, 170);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 16);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "NUMERO DEL TICKET:";
             // 
             // txt_idtikects
             // 
@@ -135,19 +88,69 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label4.TabIndex = 46;
             this.label4.Text = "ESTADO DE SU TICKET:";
             // 
+            // btn_eliminarestado
+            // 
+            this.btn_eliminarestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminarestado.Location = new System.Drawing.Point(502, 304);
+            this.btn_eliminarestado.Name = "btn_eliminarestado";
+            this.btn_eliminarestado.Size = new System.Drawing.Size(130, 44);
+            this.btn_eliminarestado.TabIndex = 52;
+            this.btn_eliminarestado.Text = "ELIMINAR";
+            this.btn_eliminarestado.UseVisualStyleBackColor = true;
+            // 
+            // btn_modificarestado
+            // 
+            this.btn_modificarestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificarestado.Location = new System.Drawing.Point(202, 304);
+            this.btn_modificarestado.Name = "btn_modificarestado";
+            this.btn_modificarestado.Size = new System.Drawing.Size(130, 44);
+            this.btn_modificarestado.TabIndex = 51;
+            this.btn_modificarestado.Text = "MODIFICAR";
+            this.btn_modificarestado.UseVisualStyleBackColor = true;
+            // 
+            // btn_cancelarestado
+            // 
+            this.btn_cancelarestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelarestado.Location = new System.Drawing.Point(653, 304);
+            this.btn_cancelarestado.Name = "btn_cancelarestado";
+            this.btn_cancelarestado.Size = new System.Drawing.Size(130, 44);
+            this.btn_cancelarestado.TabIndex = 50;
+            this.btn_cancelarestado.Text = "CANCELAR";
+            this.btn_cancelarestado.UseVisualStyleBackColor = true;
+            // 
+            // btn_guardarestado
+            // 
+            this.btn_guardarestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardarestado.Location = new System.Drawing.Point(351, 304);
+            this.btn_guardarestado.Name = "btn_guardarestado";
+            this.btn_guardarestado.Size = new System.Drawing.Size(145, 44);
+            this.btn_guardarestado.TabIndex = 49;
+            this.btn_guardarestado.Text = "GUARDAR";
+            this.btn_guardarestado.UseVisualStyleBackColor = true;
+            // 
+            // btn_nuevoestado
+            // 
+            this.btn_nuevoestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nuevoestado.Location = new System.Drawing.Point(34, 304);
+            this.btn_nuevoestado.Name = "btn_nuevoestado";
+            this.btn_nuevoestado.Size = new System.Drawing.Size(145, 44);
+            this.btn_nuevoestado.TabIndex = 48;
+            this.btn_nuevoestado.Text = "NUEVO";
+            this.btn_nuevoestado.UseVisualStyleBackColor = true;
+            // 
             // EstadoTicketsViewcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_eliminarestado);
+            this.Controls.Add(this.btn_modificarestado);
+            this.Controls.Add(this.btn_cancelarestado);
+            this.Controls.Add(this.btn_guardarestado);
+            this.Controls.Add(this.btn_nuevoestado);
             this.Controls.Add(this.cB_estado);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.btn_guardar);
-            this.Controls.Add(this.btn_nuevo);
-            this.Controls.Add(this.txt_numerotickets);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_idtikects);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -161,14 +164,14 @@ namespace EXAMEN2_PARCIAL2.Vistas
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Button btn_cancelar;
-        public System.Windows.Forms.Button btn_guardar;
-        public System.Windows.Forms.Button btn_nuevo;
-        public System.Windows.Forms.TextBox txt_numerotickets;
         public System.Windows.Forms.TextBox txt_idtikects;
         public System.Windows.Forms.ComboBox cB_estado;
+        public System.Windows.Forms.Button btn_eliminarestado;
+        public System.Windows.Forms.Button btn_modificarestado;
+        public System.Windows.Forms.Button btn_cancelarestado;
+        public System.Windows.Forms.Button btn_guardarestado;
+        public System.Windows.Forms.Button btn_nuevoestado;
     }
 }

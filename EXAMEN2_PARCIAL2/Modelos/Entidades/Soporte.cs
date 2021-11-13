@@ -8,6 +8,8 @@ namespace EXAMEN2_PARCIAL2.Modelos.Entidades
 {
    public class Soporte
     {
-
+        public int Id { get; set; }
+        public string Dispositivo { get; set; }
+        public string Tiposoporte { get; set; }
     }
 }

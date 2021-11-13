@@ -25,8 +25,14 @@ namespace EXAMEN2_PARCIAL2.Controladores
             vista.Load += new EventHandler(Load);
             vista.btn_modificar.Click += new EventHandler(Modificar);
             vista.btn_eliminar.Click += new EventHandler(Eliminar);
+            vista.btn_cancelar.Click += new EventHandler(Cancelar);
         }
-
+        private void Cancelar(object sender, EventArgs e)
+        {
+            DeshabilitarControles();
+            LimpiarControles();
+            cliente = null;
+        }
         private void Eliminar(object sender, EventArgs e)
         {
             if (vista.ClientesDataGridView.SelectedRows.Count > 0)

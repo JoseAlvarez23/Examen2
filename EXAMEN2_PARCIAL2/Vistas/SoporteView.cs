@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EXAMEN2_PARCIAL2.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
         public SoporteView()
         {
             InitializeComponent();
+            SoporteController controlador = new SoporteController(this);
         }
 
         private void label3_Click(object sender, EventArgs e)
