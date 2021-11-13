@@ -97,6 +97,7 @@ namespace EXAMEN2_PARCIAL2.Controladores
                 if (operacion == "Nuevo")
                 {
                     bool inserto = clienteDAO.InsertarNuevoCliente(cliente);
+                   
                     if (inserto)
                     {
                        
@@ -104,6 +105,7 @@ namespace EXAMEN2_PARCIAL2.Controladores
                         MessageBox.Show("Cliente creado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //ListarClientes();
                     }
+                   
                     else
                     {
                         MessageBox.Show("Cliente no se pudo insertar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
