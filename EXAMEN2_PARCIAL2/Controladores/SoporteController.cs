@@ -22,7 +22,6 @@ namespace EXAMEN2_PARCIAL2.Controladores
             vista = view;
             vista.btn_nuevosoporte.Click += new EventHandler(Nuevo);
             vista.btn_guardarsoporte.Click += new EventHandler(Guardar);
-            //vista.Load += new EventHandler(Load);
             vista.btn_modificarsoporte.Click += new EventHandler(Modificar);
             vista.btn_eliminarsoporte.Click += new EventHandler(Eliminar);
             vista.btn_cancelarsoporte.Click += new EventHandler(Cancelar);
@@ -36,43 +35,15 @@ namespace EXAMEN2_PARCIAL2.Controladores
         private void Eliminar(object sender, EventArgs e)
         {
             LimpiarControles();
-                ////bool elimino = clienteDAO.EliminarCliente(Convert.ToInt32(vista.ClientesDataGridView.CurrentRow.Cells[0].Value.ToString()));
-                //if (elimino)
-                //{
-                //    DeshabilitarControles();
-                   
-
-                //    MessageBox.Show("¡Usuario Eliminado Exitosamente!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //    ListarClientes();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("No se puedo Eliminar el usuario. Vuelvalo a intentar", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+          
             
         }
 
         private void Modificar(object sender, EventArgs e)
         {
-            //operacion = "Modificar";
-            //if (vista.ClientesDataGridView.SelectedRows.Count > 0)
-            //{
-            //    vista.txt_id.Text = vista.ClientesDataGridView.CurrentRow.Cells["ID"].Value.ToString();
-            //    vista.txt_identidad.Text = vista.ClientesDataGridView.CurrentRow.Cells["IDENTIDAD"].Value.ToString();
-            //    vista.txt_nombre.Text = vista.ClientesDataGridView.CurrentRow.Cells["NOMBRE"].Value.ToString();
-            //    vista.txt_email.Text = vista.ClientesDataGridView.CurrentRow.Cells["EMAIL"].Value.ToString();
-            //    HabilitarControles();
-            //}
+        
         }
-        //private void Load(object sender, EventArgs e)
-        //{
-        //    ListarClientes();
-        //}
-
-        //private void ListarClientes()
-        //{
-        //    vista.ClientesDataGridView.DataSource = clienteDAO.GetCliente();
-        //}
+     
         private void Nuevo(object sender, EventArgs e)
         {
             HabilitarControles();
@@ -125,7 +96,7 @@ namespace EXAMEN2_PARCIAL2.Controladores
                         LimpiarControles();
 
                         MessageBox.Show("¡Usuario Modificado Exitosamente!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //ListarClientes();
+                        
                     }
                     else
                     {
