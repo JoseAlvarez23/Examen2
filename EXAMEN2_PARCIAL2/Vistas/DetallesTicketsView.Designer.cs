@@ -30,9 +30,9 @@ namespace EXAMEN2_PARCIAL2.Vistas
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DetalledataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -45,15 +45,15 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label2.TabIndex = 38;
             this.label2.Text = "DETALLES DE TICKET";
             // 
-            // dataGridView1
+            // DetalledataGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.DetalledataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 264);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(944, 234);
-            this.dataGridView1.TabIndex = 39;
+            this.DetalledataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DetalledataGridView.Location = new System.Drawing.Point(-1, 264);
+            this.DetalledataGridView.Name = "DetalledataGridView";
+            this.DetalledataGridView.Size = new System.Drawing.Size(944, 234);
+            this.DetalledataGridView.TabIndex = 39;
             // 
             // label1
             // 
@@ -72,11 +72,11 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(940, 501);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DetalledataGridView);
             this.Controls.Add(this.label2);
             this.Name = "DetallesTicketsView";
             this.Text = "DETALLES DE LOS TICKETS";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,6 +86,6 @@ namespace EXAMEN2_PARCIAL2.Vistas
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView DetalledataGridView;
     }
 }

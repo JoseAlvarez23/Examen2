@@ -29,47 +29,50 @@ namespace EXAMEN2_PARCIAL2.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.txt_nombreticket = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_idticket = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_asunto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_numeroticket = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_eliminarticket = new System.Windows.Forms.Button();
             this.btn_modificarticket = new System.Windows.Forms.Button();
             this.btn_cancelarticket = new System.Windows.Forms.Button();
             this.btn_guadarticket = new System.Windows.Forms.Button();
             this.btn_nuevoticket = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox4
+            // txt_nombreticket
             // 
-            this.textBox4.Location = new System.Drawing.Point(402, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(218, 20);
-            this.textBox4.TabIndex = 30;
+            this.txt_nombreticket.Location = new System.Drawing.Point(402, 139);
+            this.txt_nombreticket.Name = "txt_nombreticket";
+            this.txt_nombreticket.Size = new System.Drawing.Size(218, 20);
+            this.txt_nombreticket.TabIndex = 30;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 182);
+            this.label3.Location = new System.Drawing.Point(190, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 16);
+            this.label3.Size = new System.Drawing.Size(168, 16);
             this.label3.TabIndex = 29;
-            this.label3.Text = "NUMERO:";
+            this.label3.Text = "NUMERO DEL TICKET:";
             // 
-            // textBox1
+            // txt_idticket
             // 
-            this.textBox1.Location = new System.Drawing.Point(402, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(218, 20);
-            this.textBox1.TabIndex = 28;
+            this.txt_idticket.Location = new System.Drawing.Point(402, 87);
+            this.txt_idticket.Name = "txt_idticket";
+            this.txt_idticket.ReadOnly = true;
+            this.txt_idticket.Size = new System.Drawing.Size(218, 20);
+            this.txt_idticket.TabIndex = 28;
             // 
             // label1
             // 
@@ -91,12 +94,12 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label2.TabIndex = 37;
             this.label2.Text = "GENERAR EL TICKET";
             // 
-            // textBox2
+            // txt_asunto
             // 
-            this.textBox2.Location = new System.Drawing.Point(402, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 20);
-            this.textBox2.TabIndex = 41;
+            this.txt_asunto.Location = new System.Drawing.Point(402, 230);
+            this.txt_asunto.Name = "txt_asunto";
+            this.txt_asunto.Size = new System.Drawing.Size(218, 20);
+            this.txt_asunto.TabIndex = 41;
             // 
             // label4
             // 
@@ -109,13 +112,12 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label4.TabIndex = 40;
             this.label4.Text = "ASUNTO:";
             // 
-            // textBox3
+            // txt_numeroticket
             // 
-            this.textBox3.Location = new System.Drawing.Point(402, 178);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(218, 20);
-            this.textBox3.TabIndex = 39;
+            this.txt_numeroticket.Location = new System.Drawing.Point(402, 178);
+            this.txt_numeroticket.Name = "txt_numeroticket";
+            this.txt_numeroticket.Size = new System.Drawing.Size(218, 20);
+            this.txt_numeroticket.TabIndex = 39;
             // 
             // label5
             // 
@@ -177,6 +179,10 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.btn_nuevoticket.Text = "NUEVO";
             this.btn_nuevoticket.UseVisualStyleBackColor = true;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // TicketsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,36 +194,38 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.Controls.Add(this.btn_cancelarticket);
             this.Controls.Add(this.btn_guadarticket);
             this.Controls.Add(this.btn_nuevoticket);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_asunto);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_numeroticket);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_nombreticket);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_idticket);
             this.Controls.Add(this.label1);
             this.Name = "TicketsView";
             this.Text = "Tickets";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.Button btn_eliminarticket;
         public System.Windows.Forms.Button btn_modificarticket;
         public System.Windows.Forms.Button btn_cancelarticket;
         public System.Windows.Forms.Button btn_guadarticket;
         public System.Windows.Forms.Button btn_nuevoticket;
+        public System.Windows.Forms.TextBox txt_asunto;
+        public System.Windows.Forms.TextBox txt_numeroticket;
+        public System.Windows.Forms.TextBox txt_nombreticket;
+        public System.Windows.Forms.TextBox txt_idticket;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

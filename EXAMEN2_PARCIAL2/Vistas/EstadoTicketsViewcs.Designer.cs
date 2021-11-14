@@ -32,7 +32,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label2 = new System.Windows.Forms.Label();
             this.txt_idtikects = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cB_estado = new System.Windows.Forms.ComboBox();
+            this.cb_estado = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_eliminarestado = new System.Windows.Forms.Button();
             this.btn_modificarestado = new System.Windows.Forms.Button();
@@ -69,13 +69,18 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label1.TabIndex = 39;
             this.label1.Text = "ID:";
             // 
-            // cB_estado
+            // cb_estado
             // 
-            this.cB_estado.FormattingEnabled = true;
-            this.cB_estado.Location = new System.Drawing.Point(348, 209);
-            this.cB_estado.Name = "cB_estado";
-            this.cB_estado.Size = new System.Drawing.Size(218, 21);
-            this.cB_estado.TabIndex = 47;
+            this.cb_estado.FormattingEnabled = true;
+            this.cb_estado.Items.AddRange(new object[] {
+            "SIN RESOLVER",
+            "ABIERTO",
+            "EN ESPERA",
+            "CERRADO"});
+            this.cb_estado.Location = new System.Drawing.Point(348, 209);
+            this.cb_estado.Name = "cb_estado";
+            this.cb_estado.Size = new System.Drawing.Size(218, 21);
+            this.cb_estado.TabIndex = 47;
             // 
             // label4
             // 
@@ -149,7 +154,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.Controls.Add(this.btn_cancelarestado);
             this.Controls.Add(this.btn_guardarestado);
             this.Controls.Add(this.btn_nuevoestado);
-            this.Controls.Add(this.cB_estado);
+            this.Controls.Add(this.cb_estado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_idtikects);
             this.Controls.Add(this.label1);
@@ -167,7 +172,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txt_idtikects;
-        public System.Windows.Forms.ComboBox cB_estado;
+        public System.Windows.Forms.ComboBox cb_estado;
         public System.Windows.Forms.Button btn_eliminarestado;
         public System.Windows.Forms.Button btn_modificarestado;
         public System.Windows.Forms.Button btn_cancelarestado;
