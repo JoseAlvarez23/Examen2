@@ -103,7 +103,7 @@ namespace EXAMEN2_PARCIAL2.Controladores
                     bool inserto = estadoDAO.InsertarNuevoEstado(estado);
                     if (inserto)
                     {
-                        MessageBox.Show("El estodo de su ticket fue puest en el sistema exitosamente", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("El estodo de su ticket fue puesto en el sistema exitosamente", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {

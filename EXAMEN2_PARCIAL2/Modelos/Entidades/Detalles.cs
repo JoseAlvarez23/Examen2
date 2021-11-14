@@ -8,6 +8,8 @@ namespace EXAMEN2_PARCIAL2.Modelos.Entidades
 {
     public class Detalles
     {
-
+        public int Id { get; set; }
+        
+        public int IdTicket { get; set; }
     }
 }

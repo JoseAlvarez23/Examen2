@@ -32,6 +32,8 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label2 = new System.Windows.Forms.Label();
             this.DetalledataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_iddetalle = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,7 +41,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(366, 83);
+            this.label2.Location = new System.Drawing.Point(361, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 16);
             this.label2.TabIndex = 38;
@@ -59,11 +61,29 @@ namespace EXAMEN2_PARCIAL2.Vistas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(317, 152);
+            this.label1.Location = new System.Drawing.Point(317, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(264, 16);
             this.label1.TabIndex = 40;
             this.label1.Text = "TODOS LOS TICKETS GENERADOS ";
+            // 
+            // txt_iddetalle
+            // 
+            this.txt_iddetalle.Location = new System.Drawing.Point(341, 100);
+            this.txt_iddetalle.Name = "txt_iddetalle";
+            this.txt_iddetalle.ReadOnly = true;
+            this.txt_iddetalle.Size = new System.Drawing.Size(218, 20);
+            this.txt_iddetalle.TabIndex = 42;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(303, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 16);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "ID:";
             // 
             // DetallesTicketsView
             // 
@@ -71,6 +91,8 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(940, 501);
+            this.Controls.Add(this.txt_iddetalle);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DetalledataGridView);
             this.Controls.Add(this.label2);
@@ -87,5 +109,7 @@ namespace EXAMEN2_PARCIAL2.Vistas
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.DataGridView DetalledataGridView;
+        public System.Windows.Forms.TextBox txt_iddetalle;
+        private System.Windows.Forms.Label label3;
     }
 }
