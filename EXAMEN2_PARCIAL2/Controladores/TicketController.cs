@@ -22,7 +22,7 @@ namespace EXAMEN2_PARCIAL2.Controladores
             vista = view;
             vista.btn_nuevoticket.Click += new EventHandler(Nuevo);
             vista.btn_guadarticket.Click += new EventHandler(Guardar);
-            vista.Load += new EventHandler(Load);
+            //vista.Load += new EventHandler(Load);
             vista.btn_modificarticket.Click += new EventHandler(Modificar);
             vista.btn_eliminarticket.Click += new EventHandler(Eliminar);
             vista.btn_cancelarticket.Click += new EventHandler(Cancelar);
@@ -65,10 +65,10 @@ namespace EXAMEN2_PARCIAL2.Controladores
             //    HabilitarControles();
             //}
         }
-        private void Load(object sender, EventArgs e)
-        {
-            ListarClientes();
-        }
+        //private void Load(object sender, EventArgs e)
+        //{
+        //    ListarClientes();
+        //}
 
         private void ListarClientes()
         {
@@ -81,18 +81,20 @@ namespace EXAMEN2_PARCIAL2.Controladores
         }
         private void Guardar(object sender, EventArgs e)
         {
-            if (vista.txt_numeroticket.Text == "")
-            {
-                vista.errorProvider1.SetError(vista.txt_numeroticket, "Por favor ingrese el numero de su ticket");
-                vista.txt_numeroticket.Focus();
-                return;
-            }
             if (vista.txt_nombreticket.Text == "")
             {
                 vista.errorProvider1.SetError(vista.txt_nombreticket, "Por favor ingrese un Nombre");
                 vista.txt_nombreticket.Focus();
                 return;
             }
+
+            if (vista.txt_numeroticket.Text == "")
+            {
+                vista.errorProvider1.SetError(vista.txt_numeroticket, "Por favor ingrese el numero de su ticket");
+                vista.txt_numeroticket.Focus();
+                return;
+            }
+        
             if (vista.txt_asunto.Text == "")
             {
                 vista.errorProvider1.SetError(vista.txt_asunto, "Por favor ingrese el asunto de su ticket");
@@ -103,8 +105,8 @@ namespace EXAMEN2_PARCIAL2.Controladores
 
             try
             {
-                tickets.Numero = vista.txt_numeroticket.Text;
                 tickets.Nombre = vista.txt_nombreticket.Text;
+                tickets.Numero = vista.txt_numeroticket.Text;
                 tickets.Asunto = vista.txt_asunto.Text;
 
 

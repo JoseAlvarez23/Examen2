@@ -8,7 +8,8 @@ namespace EXAMEN2_PARCIAL2.Modelos.Entidades
 {
     public class Estado
     {
-
+        public int Id { get; set; }
+        public string Estadoticket { get; set; }
 
     }
 }

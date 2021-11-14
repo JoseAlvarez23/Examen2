@@ -29,8 +29,9 @@ namespace EXAMEN2_PARCIAL2.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_idtikects = new System.Windows.Forms.TextBox();
+            this.txt_idestado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cb_estado = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,6 +40,8 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.btn_cancelarestado = new System.Windows.Forms.Button();
             this.btn_guardarestado = new System.Windows.Forms.Button();
             this.btn_nuevoestado = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -51,13 +54,13 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.label2.TabIndex = 38;
             this.label2.Text = "ESTADO DE TICKET";
             // 
-            // txt_idtikects
+            // txt_idestado
             // 
-            this.txt_idtikects.Location = new System.Drawing.Point(343, 114);
-            this.txt_idtikects.Name = "txt_idtikects";
-            this.txt_idtikects.ReadOnly = true;
-            this.txt_idtikects.Size = new System.Drawing.Size(218, 20);
-            this.txt_idtikects.TabIndex = 40;
+            this.txt_idestado.Location = new System.Drawing.Point(343, 114);
+            this.txt_idestado.Name = "txt_idestado";
+            this.txt_idestado.ReadOnly = true;
+            this.txt_idestado.Size = new System.Drawing.Size(218, 20);
+            this.txt_idestado.TabIndex = 40;
             // 
             // label1
             // 
@@ -143,6 +146,10 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.btn_nuevoestado.Text = "NUEVO";
             this.btn_nuevoestado.UseVisualStyleBackColor = true;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // EstadoTicketsViewcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,11 +163,12 @@ namespace EXAMEN2_PARCIAL2.Vistas
             this.Controls.Add(this.btn_nuevoestado);
             this.Controls.Add(this.cb_estado);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_idtikects);
+            this.Controls.Add(this.txt_idestado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "EstadoTicketsViewcs";
             this.Text = "EstadoTicketsViewcs";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,12 +179,13 @@ namespace EXAMEN2_PARCIAL2.Vistas
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox txt_idtikects;
+        public System.Windows.Forms.TextBox txt_idestado;
         public System.Windows.Forms.ComboBox cb_estado;
         public System.Windows.Forms.Button btn_eliminarestado;
         public System.Windows.Forms.Button btn_modificarestado;
         public System.Windows.Forms.Button btn_cancelarestado;
         public System.Windows.Forms.Button btn_guardarestado;
         public System.Windows.Forms.Button btn_nuevoestado;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
